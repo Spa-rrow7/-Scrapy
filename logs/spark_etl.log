@@ -1,0 +1,1013 @@
+2026-11-20 18:46:02,943 [INFO] spark_etl: SparkSession запущена! Подключение: jdbc:postgresql://127.0.0.1:5433/test_db
+2026-11-20 18:46:16,445 [INFO] spark_etl: Загружено строк из сырого слоя raw_products: 150
+2026-11-20 18:46:36,453 [INFO] spark_etl: После фильтрации валидных записей: 150 (отброшено: 0)
+2026-11-20 18:46:36,958 [INFO] spark_etl: После дедупликации по URL уникальных товаров: 150
+2026-11-20 18:46:52,389 [INFO] spark_etl: Error while receiving.
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 723, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-11-20 18:46:52,391 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:46:52,392 [ERROR] spark_etl: Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 723, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+        "Error while sending or receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2026-11-20 18:46:52,393 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:46:54,442 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:46:54,442 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:46:56,491 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:46:56,491 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:46:58,534 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:46:58,535 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:00,592 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:00,593 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:02,649 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:02,650 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:04,678 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:04,678 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:06,717 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:06,718 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:08,756 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:08,757 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:10,808 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:10,808 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:12,849 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:12,850 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:14,905 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:14,905 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:16,943 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:16,944 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:18,982 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:18,982 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:21,024 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:21,025 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:23,067 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:23,068 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:25,120 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:25,121 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:27,174 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:27,175 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:29,231 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:29,232 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:31,289 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:31,289 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:33,329 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:33,330 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:35,368 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:35,369 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:37,420 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:37,420 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:39,473 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:39,474 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:41,512 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:41,513 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:43,565 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:43,565 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:45,613 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:45,614 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:47,666 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:47,667 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:49,710 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:49,711 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:51,753 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:51,754 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:53,801 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:53,802 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:55,828 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:55,829 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:57,870 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:57,871 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:59,917 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:47:59,918 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:01,961 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:01,962 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:04,013 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:04,014 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:06,069 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:06,070 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:08,117 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:08,118 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:10,161 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:10,162 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:12,218 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:12,218 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:14,258 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:14,259 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:16,288 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:16,288 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:18,344 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:18,344 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:20,396 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:20,397 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:22,441 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:22,442 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:24,491 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:24,492 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:26,545 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:26,546 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:28,585 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:28,586 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:30,634 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:30,635 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:32,662 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:32,662 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:34,712 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:34,713 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:36,765 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:36,766 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:38,817 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:38,818 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:40,871 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:40,872 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:42,922 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:42,923 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:44,957 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:44,958 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:47,009 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:47,010 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:49,049 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:49,050 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:51,087 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:51,088 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:51,252 [INFO] spark_etl: Error while sending or receiving.
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-11-20 18:48:51,253 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:51,253 [INFO] spark_etl: Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 506, in send_command
+    raise Py4JNetworkError(
+        "Error while sending", e, proto.ERROR_ON_SEND)
+py4j.protocol.Py4JNetworkError: Error while sending
+2026-11-20 18:48:53,114 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:53,115 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:53,286 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:55,141 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:55,141 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:57,194 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:57,195 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:59,234 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:48:59,235 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:01,282 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:01,282 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:03,310 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:03,311 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:05,368 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:05,368 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:07,427 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:07,427 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:09,479 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:09,480 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:11,518 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:11,519 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:13,574 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:13,575 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:15,623 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:15,624 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:17,673 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:17,674 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:19,717 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:19,718 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:21,773 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:21,773 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:23,830 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:23,830 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:25,887 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:25,887 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:27,929 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:27,930 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:29,984 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:29,985 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:32,025 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:32,026 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:34,068 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:34,069 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:36,119 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:36,120 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:38,170 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:38,171 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:40,208 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:40,209 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:42,256 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:42,257 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:44,308 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:44,309 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:46,361 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:46,362 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:48,416 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:48,417 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:50,456 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:50,456 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:52,507 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:52,508 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:49:57,573 [INFO] spark_etl: SparkSession запущена! Подключение: jdbc:postgresql://127.0.0.1:5433/test_db
+2026-11-20 18:49:59,269 [INFO] spark_etl: Загружено строк из сырого слоя raw_products: 150
+2026-11-20 18:50:00,280 [INFO] spark_etl: После фильтрации валидных записей: 150 (отброшено: 0)
+2026-11-20 18:50:01,277 [INFO] spark_etl: После дедупликации по URL уникальных товаров: 150
+2026-11-20 18:50:02,585 [INFO] spark_etl: Error while sending or receiving.
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-11-20 18:50:02,612 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:50:02,613 [INFO] spark_etl: Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 506, in send_command
+    raise Py4JNetworkError(
+        "Error while sending", e, proto.ERROR_ON_SEND)
+py4j.protocol.Py4JNetworkError: Error while sending
+2026-11-20 18:50:04,666 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:50:04,667 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:50:04,668 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:50:06,719 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:50:06,719 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:33,567 [INFO] spark_etl: SparkSession запущена! Подключение: jdbc:postgresql://127.0.0.1:5433/test_db
+2026-11-20 18:59:35,382 [INFO] spark_etl: Загружено строк из сырого слоя raw_products: 150
+2026-11-20 18:59:36,497 [INFO] spark_etl: После фильтрации валидных записей: 150 (отброшено: 0)
+2026-11-20 18:59:37,079 [INFO] spark_etl: После дедупликации по URL уникальных товаров: 150
+2026-11-20 18:59:38,008 [INFO] spark_etl: Error while receiving.
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 723, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-11-20 18:59:38,020 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:38,021 [ERROR] spark_etl: Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 723, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+        "Error while sending or receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2026-11-20 18:59:38,022 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:40,063 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:40,064 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:42,106 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:42,107 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:44,161 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:44,162 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:46,213 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:46,214 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:48,265 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:48,266 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:50,306 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:50,306 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:52,348 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:52,348 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:54,397 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:54,398 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:56,449 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:56,449 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:58,489 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 18:59:58,490 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:00,533 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:00,534 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:02,574 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:02,575 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:04,620 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:04,620 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:06,649 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:06,650 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:08,697 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:08,698 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:10,722 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:10,722 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:12,767 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:12,768 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:14,811 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:14,812 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:16,855 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:16,856 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:18,903 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:18,903 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:20,935 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:20,935 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:22,979 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:22,980 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:25,028 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:25,028 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:27,057 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:27,058 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:29,101 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:29,102 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:31,154 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:31,155 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:33,210 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:33,210 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:35,253 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:35,254 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:37,306 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:37,307 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:39,332 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:39,333 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:41,378 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:41,379 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:43,416 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:43,417 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:45,468 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:45,469 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:47,517 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:47,517 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:49,559 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:49,560 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:51,596 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:51,597 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:53,654 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:53,654 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:55,705 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:55,706 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:57,751 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:57,752 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:59,794 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:00:59,794 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:01,830 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:01,831 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:03,887 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:03,888 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:05,937 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:05,938 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:07,990 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:07,991 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:10,031 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:10,032 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:12,074 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:12,075 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:14,132 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:14,133 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:16,188 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:16,189 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:18,236 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:18,237 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:20,277 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:20,278 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:22,315 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:22,316 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:24,371 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:24,372 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:26,399 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:26,399 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:28,452 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:28,453 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:30,495 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:30,496 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:32,548 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:32,548 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:34,599 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:34,599 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:36,643 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:36,643 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:38,692 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:38,693 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:40,750 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:40,751 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:42,806 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:42,807 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:44,859 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:44,860 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:46,911 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:46,912 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:48,947 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:48,947 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:50,999 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:51,000 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:53,053 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:53,054 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:55,105 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:55,106 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:57,154 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:57,155 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:59,197 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:01:59,198 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:01,238 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:01,239 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:03,288 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:03,288 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:05,328 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:05,329 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:07,380 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:07,381 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:09,417 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:09,418 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:11,458 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:11,458 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:13,505 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:13,506 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:15,531 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:15,532 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:17,572 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:17,574 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:19,610 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:19,610 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:21,642 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:21,643 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:23,679 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:23,680 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:25,735 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:25,736 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:27,785 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:27,786 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:29,814 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:29,815 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:31,867 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:31,868 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:33,919 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:33,920 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:35,971 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:35,972 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:38,013 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:38,014 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:40,041 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:40,042 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:42,085 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:42,086 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:44,138 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:44,138 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:46,194 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:46,194 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:48,245 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:48,246 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:50,300 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:50,301 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:52,353 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:52,354 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:54,410 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:54,410 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:56,466 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:56,467 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:58,519 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:02:58,520 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:00,570 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:00,571 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:02,623 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:02,624 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:04,666 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:04,667 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:06,697 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:06,698 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:08,735 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:08,736 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:10,789 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:10,790 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:12,831 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:12,831 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:14,887 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:14,887 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:16,929 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:16,930 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:18,963 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:18,964 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:21,002 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:21,002 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:23,041 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:23,041 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:25,084 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:25,085 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:27,142 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:27,142 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:29,185 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:29,186 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:31,205 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:31,206 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:33,250 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:33,251 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:35,298 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:35,299 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:37,340 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:37,341 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:39,395 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:39,396 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:41,426 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:41,427 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:43,469 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:43,470 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:45,487 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:45,488 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:47,528 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:47,529 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:49,573 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:49,573 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:51,606 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:51,606 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:53,647 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:53,647 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:55,706 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:55,707 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:57,751 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:57,751 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:59,781 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:03:59,782 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:01,795 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:01,796 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:03,811 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:03,812 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:05,844 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:05,845 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:07,898 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:07,899 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:09,944 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:09,945 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:11,978 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:11,979 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:14,039 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:14,040 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:16,084 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:16,084 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:18,122 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:18,123 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:20,179 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:20,179 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:22,198 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:22,199 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:24,230 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:24,231 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:26,278 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:26,279 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:28,308 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:28,308 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:30,366 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:30,367 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:32,399 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:32,399 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:34,443 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:34,444 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:36,477 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:36,477 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:38,538 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:38,539 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:40,580 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:40,581 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:42,625 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:42,626 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:44,668 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:44,669 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:46,691 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:46,691 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:48,747 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:48,748 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:50,790 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:50,791 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:52,819 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:52,820 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:54,851 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:54,851 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:56,878 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:56,879 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:58,916 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:04:58,916 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:00,975 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:00,975 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:03,033 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:03,034 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:05,079 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:05,079 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:07,112 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:07,112 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:09,159 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:09,160 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:11,196 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:11,197 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:13,239 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:13,239 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:15,286 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:15,287 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:17,313 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:17,314 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:19,342 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:19,343 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:21,378 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:21,379 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:23,423 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:23,423 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:05:49,729 [INFO] spark_etl: SparkSession запущена! Подключение: jdbc:postgresql://127.0.0.1:5433/test_db
+2026-11-20 19:05:52,087 [INFO] spark_etl: Загружено строк из сырого слоя raw_products: 150
+2026-11-20 19:05:57,600 [INFO] spark_etl: После фильтрации валидных записей: 150 (отброшено: 0)
+2026-11-20 19:05:58,207 [INFO] spark_etl: После дедупликации по URL уникальных товаров: 150
+2026-11-20 19:06:05,767 [INFO] spark_etl: Error while sending or receiving.
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-11-20 19:06:05,770 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:06:05,770 [INFO] spark_etl: Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 506, in send_command
+    raise Py4JNetworkError(
+        "Error while sending", e, proto.ERROR_ON_SEND)
+py4j.protocol.Py4JNetworkError: Error while sending
+2026-11-20 19:06:07,814 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:06:07,815 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:06:07,815 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:06:09,871 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:06:09,872 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:06:11,901 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:06:11,902 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:06:13,955 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:06:13,956 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:18,237 [INFO] spark_etl: SparkSession запущена! Подключение: jdbc:postgresql://127.0.0.1:5433/test_db
+2026-11-20 19:12:20,555 [INFO] spark_etl: Загружено строк из сырого слоя raw_products: 150
+2026-11-20 19:12:22,269 [INFO] spark_etl: После фильтрации валидных записей: 150 (отброшено: 0)
+2026-11-20 19:12:23,039 [INFO] spark_etl: После дедупликации по URL уникальных товаров: 150
+2026-11-20 19:12:26,191 [INFO] spark_etl: Error while sending or receiving.
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-11-20 19:12:26,193 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:26,194 [INFO] spark_etl: Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 506, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending
+2026-11-20 19:12:28,235 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:28,235 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:28,236 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:30,268 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:30,268 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:32,300 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:32,300 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:34,343 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:34,344 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:36,376 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:36,377 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:38,417 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:38,417 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:40,445 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:40,445 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:42,489 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:42,490 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:44,535 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:44,535 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:46,595 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:46,595 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:48,651 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:48,652 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:50,694 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:50,694 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:52,731 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:52,732 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:54,771 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:54,772 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:56,806 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:56,807 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:58,849 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:12:58,849 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:00,890 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:00,890 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:02,923 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:02,924 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:04,965 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:04,966 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:07,010 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:07,010 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:09,054 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:09,056 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:11,098 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:11,099 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:13,147 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:13,148 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:15,183 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:15,184 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:17,218 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:17,219 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:19,247 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:19,248 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:21,305 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:21,306 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:23,336 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:23,337 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:25,394 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:25,395 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:27,420 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:27,421 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:29,446 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:29,446 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:31,488 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:31,489 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:33,533 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:33,534 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:35,561 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:35,562 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:37,613 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:37,614 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:39,665 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:39,666 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:40,392 [INFO] spark_etl: Error while sending or receiving.
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-11-20 19:13:40,393 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:40,393 [INFO] spark_etl: Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Spark\spark-3.5.9-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 506, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending
+2026-11-20 19:13:41,710 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:41,711 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:42,427 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:43,764 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:43,765 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:45,816 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:45,816 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:47,852 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:47,852 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:49,908 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:49,908 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:51,963 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:51,964 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:54,009 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:54,009 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:56,059 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:56,059 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:58,100 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:13:58,101 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:00,157 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:00,157 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:02,199 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:02,200 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:04,242 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:04,242 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:06,274 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:06,274 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:08,306 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:08,307 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:10,345 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:10,346 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:12,386 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:12,387 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:14,430 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:14,430 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:16,484 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:16,485 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:18,536 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:18,536 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:20,588 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:20,588 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:22,631 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:22,632 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:24,684 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:24,685 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:26,745 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:26,746 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:28,797 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:28,798 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:30,828 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:30,829 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:32,882 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:32,882 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:34,927 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:34,927 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:36,951 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:36,951 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:39,009 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:39,010 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:41,045 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:41,046 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:43,099 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:43,100 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:45,157 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:45,158 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:47,209 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:47,210 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:49,249 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:49,249 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:51,292 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:51,293 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:53,350 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:53,350 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:55,402 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:55,403 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:57,456 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:57,457 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:59,496 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:14:59,496 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:01,537 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:01,538 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:03,588 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:03,589 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:05,628 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:05,629 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:07,669 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:07,670 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:09,719 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:09,720 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:11,743 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:11,744 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:13,793 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:13,793 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:15,850 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:15,850 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:17,880 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:17,881 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:19,933 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:19,934 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:21,988 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:21,988 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:24,018 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:24,018 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:26,062 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:26,063 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:28,100 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:28,101 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:30,143 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:30,144 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:31,655 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:32,187 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:32,188 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:34,233 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:34,234 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:36,296 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:36,296 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:38,337 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:38,338 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:40,384 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:40,385 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:42,439 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:42,440 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:44,487 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:44,488 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:46,548 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:46,548 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:48,583 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:48,583 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:50,625 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:50,626 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:52,667 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:52,668 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:54,719 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:54,720 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:56,774 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:56,775 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:58,827 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:15:58,827 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:00,880 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:00,880 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:02,921 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:02,922 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:04,964 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:04,965 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:07,022 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:07,022 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:09,070 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:09,070 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:11,114 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:11,115 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:13,144 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:13,145 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:15,180 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:15,180 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:17,222 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:17,222 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:19,274 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:19,275 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:21,321 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:21,322 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:23,357 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:23,358 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:25,395 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:25,395 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:27,426 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:27,427 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:29,456 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:29,456 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:31,496 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:31,496 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:33,527 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:33,527 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:35,562 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:35,562 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:37,601 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:37,601 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:39,629 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:39,629 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:41,657 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:41,658 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:43,689 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:43,689 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:45,725 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:45,725 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:47,758 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:47,758 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:49,799 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:49,799 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:51,834 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:51,834 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:53,869 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:53,869 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:55,910 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:55,910 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:57,949 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:57,949 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:59,993 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:16:59,993 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:02,026 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:02,027 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:04,055 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:04,056 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:06,100 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:06,100 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:08,131 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:08,132 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:10,164 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:10,164 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:12,195 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:12,195 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:14,234 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:14,235 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:16,269 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:16,270 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:18,311 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:18,312 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:20,347 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:20,348 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:22,376 [INFO] spark_etl: Closing down clientserver connection
+2026-11-20 19:17:22,377 [INFO] spark_etl: Closing down clientserver connection
